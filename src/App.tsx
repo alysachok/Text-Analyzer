@@ -20,28 +20,9 @@ import {
 } from '@mui/material';
 import React, { useState } from 'react';
 import { calculateReadability } from './TextAnalysis';
+import { getDesignTokens } from './themeConfig'; // Import theme configuration
 
 type Mode = 'light' | 'dark';
-
-// Function to define light and dark theme tokens
-const getDesignTokens = (mode: Mode) => ({
-  palette: {
-    mode,
-    ...(mode === 'light'
-      ? {
-          primary: { main: '#3e5c76' },
-          secondary: { main: '#748cab' },
-          background: { default: '#f0ebd8', paper: '#ffffff' },
-          text: { primary: '#1d2d44', secondary: '#3e5c76' },
-        }
-      : {
-          primary: { main: '#748cab' },
-          secondary: { main: '#3e5c76' },
-          background: { default: '#1d2d44', paper: '#2a3e55' },
-          text: { primary: '#f0ebd8', secondary: '#c4d7e0' },
-        }),
-  },
-});
 
 function App() {
   const [mode, setMode] = useState<Mode>('light'); // State to toggle between light and dark mode
@@ -49,20 +30,17 @@ function App() {
   const [text, setText] = useState(''); // State for the textarea
   const [result, setResult] = useState(''); // State to store the analysis result
 
-  // Function to handle the text analysis
+  const handleModeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMode(event.target.checked ? 'dark' : 'light');
+  };
+
   const analyzeText = () => {
     setResult(calculateReadability(text));
   };
 
-  // Function to handle the clear textarea
   const clearText = () => {
-    setText("")
-    setResult("")
-  };
-
-  // Function to toggle the mode
-  const handleModeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setMode(event.target.checked ? 'dark' : 'light');
+    setText('');
+    setResult('');
   };
 
   const textExcerpts = [
