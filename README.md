@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# Text Readability Analyzer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Originally developed in C as part of the CS50 Harvard University curriculum, this project has evolved into a React-Typescript application to provide a user-friendly interface. The Text Readability Analyzer uses the Coleman-Liau index to determine the U.S. grade level necessary for understanding a piece of text. This tool can be valuable for educators, writers, and anyone looking to ensure their writing is accessible and understandable. By analyzing the number of letters, words, and sentences, it offers clear insight into text complexity.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Analyze Readability**: Determine the U.S. grade level required to understand your text.
+- **Intuitive Interface**: Easily input and assess any text with a user-friendly design.
+- **Immediate Feedback**: Quickly receive analysis results without the need for server processing.
+- **Educational Tool**: An excellent resource for teaching and learning about writing complexity.
+- **Dark and Light Modes**: Choose between dark and light themes for a personalized user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technology Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React**
+- **TypeScript**
+- **Material-UI**
 
-### `npm test`
+## Contact Information
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Interested in learning more about this project or connecting? Reach out to me at:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Email**: aleksandra@lysachok.dev
+- **LinkedIn**: [Aleksandra Lysachok](https://www.linkedin.com/in/aleksandra-lysachok)
